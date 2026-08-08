@@ -1,0 +1,6 @@
+﻿venv/
+raw_data/
+dataset/
+saved/
+*.pyc
+__pycache__/

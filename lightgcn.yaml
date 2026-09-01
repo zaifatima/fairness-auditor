@@ -16,15 +16,15 @@ eval_args:
     split: {'RS': [0.8,0.1,0.1]}
     group_by: user
     order: RO
-    mode: full
+    mode: {'valid': 'uni100', 'test': 'uni100'}
 
 embedding_size: 64
-n_layers: 2
+n_layers: 1
 reg_weight: 1e-05
 
 epochs: 20
-train_batch_size: 4096
-eval_batch_size: 4096
+train_batch_size: 16384
+eval_batch_size: 16384
 learning_rate: 0.001
 
 metrics: ['Recall', 'NDCG', 'Hit', 'Precision']
@@ -35,3 +35,4 @@ device: cpu
 seed: 2026
 show_progress: True
 checkpoint_dir: saved/
+eval_step: 5

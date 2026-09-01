@@ -4,3 +4,15 @@ dataset/
 saved/
 *.pyc
 __pycache__/
+
+# Secrets and private keys
+openai_key.txt
+openaikeys.txt
+*.pem
+*.zip
+log/
+log_tensorboard/
+recommendations.db
+eval_log.txt
+llm_full_log.txt
+ml-1m/

@@ -16,7 +16,7 @@ eval_args:
     split: {'RS': [0.8,0.1,0.1]}
     group_by: user
     order: RO
-    mode: full
+    mode: {'valid': 'uni100', 'test': 'uni100'}
 
 mf_embedding_size: 64
 mlp_embedding_size: 64
@@ -24,8 +24,8 @@ mlp_hidden_size: [128,64,32]
 dropout_prob: 0.1
 
 epochs: 20
-train_batch_size: 4096
-eval_batch_size: 4096
+train_batch_size: 1024
+eval_batch_size: 1024
 learning_rate: 0.001
 
 metrics: ['Recall', 'NDCG', 'Hit', 'Precision']
@@ -36,3 +36,4 @@ device: cpu
 seed: 2026
 show_progress: True
 checkpoint_dir: saved/
+eval_step: 5

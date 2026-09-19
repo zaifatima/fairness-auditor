@@ -1,0 +1,4 @@
+model,recall_at_10,ndcg_at_10,hit_at_10,evaluation_note
+NeuMF,0.7133,0.7881,0.9977,MovieLens-32M 50k-user; uni100 sampled test
+LightGCN,0.6707,0.7385,0.9947,MovieLens-32M 50k-user; uni100 sampled test
+SASRec,0.9674,0.8046,0.9674,MovieLens-32M 50k-user; uni100 sampled test

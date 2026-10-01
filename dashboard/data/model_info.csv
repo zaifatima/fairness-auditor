@@ -1,0 +1,4 @@
+model,architecture,plain,temporal_story
+NeuMF,Neural collaborative filtering,Learns user–item preferences using embeddings and a neural interaction layer.,Emerging concentration over time
+SASRec,Sequential self-attention,Learns from the order of a user's past interactions using self-attention.,Strong increase in concentration over time
+LightGCN,Graph-based collaborative filtering,Learns preferences by propagating information across the user–item interaction graph.,Persistent extreme concentration from the earliest retained checkpoint

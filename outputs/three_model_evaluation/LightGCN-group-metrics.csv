@@ -1,0 +1,4 @@
+user_group,users,recommendation_rows,mean_rank,mean_exposure,popular_share
+high,26,260,5.5,0.45435593380883454,1.0
+low,30,300,5.5,0.4543559338088345,1.0
+medium,44,440,5.5,0.4543559338088346,1.0

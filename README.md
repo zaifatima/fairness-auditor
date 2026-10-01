@@ -1,7 +1,7 @@
 # Proactive Fairness Auditor for Recommender Systems
 
-MSc dissertation project (Middlesex University Dubai, supervised by Dr.
-Krishnadasn Nanath): a toolkit for measuring fairness drift in
+MSc dissertation project (Middlesex University Dubai
+: a toolkit for measuring fairness drift in
 recommender systems over time, rather than only auditing a single
 snapshot, and forecasting future fairness-threshold violations before
 they occur.

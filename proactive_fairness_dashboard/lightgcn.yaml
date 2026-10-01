@@ -1,0 +1,38 @@
+﻿USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+RATING_FIELD: rating
+TIME_FIELD: timestamp
+
+load_col:
+    inter: [user_id, item_id, rating, timestamp]
+
+val_interval:
+    rating: "[3,inf)"
+
+min_user_inter_num: 5
+min_item_inter_num: 5
+
+eval_args:
+    split: {'RS': [0.8,0.1,0.1]}
+    group_by: user
+    order: RO
+    mode: {'valid': 'uni100', 'test': 'uni100'}
+
+embedding_size: 64
+n_layers: 1
+reg_weight: 1e-05
+
+epochs: 20
+train_batch_size: 16384
+eval_batch_size: 16384
+learning_rate: 0.001
+
+metrics: ['Recall', 'NDCG', 'Hit', 'Precision']
+topk: [10, 20]
+valid_metric: NDCG@10
+
+device: cpu
+seed: 2026
+show_progress: True
+checkpoint_dir: saved/
+eval_step: 5
